@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  text-shadow: 1px 1px rgba(0,0,0,.1);
+}
+
+#break-label, #session-label {
+  @apply text-xl;
+}
+
+#break-length, #session-length {
+  @apply text-5xl font-bold;
+}
+
+.button-wrapper {
+  @apply flex flex-col;
+}
+.setting-button {
+  @apply text-base px-2;
+}
+
+i {
+  text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+button:hover i {
+  text-shadow: 2px 2px 1px rgba(0,0,0,.3);
+  transform: translateY(-1px);
+}
