@@ -166,9 +166,9 @@ function App() {
           }}
           src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav"
         />
+        <button className="mt-5 text-base" onClick={()=>setDebug(debug => !debug)}>DEBUG</button>
         { debug?
-        <div id="debug" className="mt-5 text-base">
-          <h1>DEBUG</h1>
+        <div id="debug" className="text-base">
           <ul>
             <li>{ play?'play':'pause' }</li>
             <li>Timer: {timer}</li>
